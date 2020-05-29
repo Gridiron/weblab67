@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+    http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+
+    <persistence-unit name="Test_Local" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>model.entity.Bill</class>
+        <class>model.entity.Work</class>
+        <class>model.entity.Worker</class>
+        <class>model.entity.TechTask</class>
+        <class>model.entity.Orderer</class>
+        <properties>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/> <!-- DB Driver -->
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/mydbtake2?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;useSSL=false"/> <!-- BD Mane -->
+            <property name="hibernate.connection.username" value="root"/> <!-- DB User -->
+            <property name="hibernate.connection.password" value="11111111"/> <!-- DB Password -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/> <!-- create / create-drop / update -->
+            <property name="hibernate.show_sql" value="false"/>
+            <property name="hibernate.format_sql" value="false"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+        </properties>
+    </persistence-unit>
+</persistence>

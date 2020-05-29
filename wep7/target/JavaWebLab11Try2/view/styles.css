@@ -1,0 +1,139 @@
+a,
+
+a:visited { color: #93291b; text-decoration: none; }
+
+
+a:hover { text-decoration: underline }
+
+
+h1 { font-family: 'Enriqueta', arial, serif; line-height: 1.25; margin: 0 0 10px; font-size: 40px; font-weight: bold; }
+
+h1 a,
+
+h1 a:visited { color: #333333 }
+
+
+h1 a:hover { color: #93291b; text-decoration: none; }
+
+
+p { color: #333333; font-family: "Helvetica Neue",Arial,sans-serif; font-size: 16px; font-weight: 300; line-height: 1.5625; margin-bottom: 15px; }
+
+.info-box {
+    width: 40%;
+}
+
+.numberlist{
+	width:450px;
+    padding-left: 10px;
+}
+.numberlist ol{
+	            counter-reset: li;
+				list-style: none;
+				*list-style: decimal;
+				font: 15px 'trebuchet MS', 'lucida sans';
+				padding: 0;
+				margin-bottom: 4em;
+
+}
+.numberlist ol ol{
+				margin: 0 0 0 2em;
+			}
+			
+.numberlist a{
+				position: relative;
+				display: block;
+				padding: .4em .4em .4em 2em;
+				*padding: .4em;
+				margin: .5em 0;
+				background: #FFF;
+				color: #444;
+				text-decoration: none;
+				-moz-border-radius: .3em;
+				-webkit-border-radius: .3em;
+				border-radius: .3em;
+			}
+
+.numberlist a:hover{
+				background: #cbe7f8;
+				text-decoration:underline;
+			}
+.numberlist a:before{
+				content: counter(li);
+				counter-increment: li;
+				position: absolute;	
+				left: -1.3em;
+				top: 50%;
+				margin-top: -1.3em;
+				background: #87ceeb;
+				height: 2em;
+				width: 2em;
+				line-height: 2em;
+				border: .3em solid #fff;
+				text-align: center;
+				font-weight: bold;
+				-moz-border-radius: 2em;
+				-webkit-border-radius: 2em;
+				border-radius: 2em;
+				color:#FFF;
+			}
+
+
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    text-align: right;
+    height: 30px;
+    background-color: #3683B7;
+    color: white;
+}
+
+td {
+    height: 20px;
+    vertical-align: bottom;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+tr:hover {background-color: #f5f5f5;}
+
+.return-button {
+    size: 20px 40px;
+    margin-top: 10px;
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+    border: 2px solid #3683B7;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 12px 28px;
+}
+
+.return-button:hover {
+    background-color: #3683B7;
+    color: white;
+  }
+
+.page-form {
+	width: 30%;
+}
+
+.page-form input, .page-form button{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+  }
